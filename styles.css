@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Navbar styling*/
+.navbar {
+background-color: rgba(8, 72, 235, 0.762)
+}
+
+.logo {
+    max-width: 90px;
+    /* Adjust the max width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 50px;
+        /* Smaller logo on small screens */
+    }
+}
+
+.pro {
+    border-radius: 50%;
+    
+}
+
+/* Hero Section */
+.hero {
+    background: url(https://i.im.ge/2024/12/27/zcZPA6.2-block.jpeg) no-repeat center center/cover;
+    color: rgb(39, 34, 34);
+    text-align: center;
+}
+#about {
+   
+    color: rgb(0, 0, 0); /* Change text color to white for better contrast */
+    padding: 50px 0; /* Add some padding for spacing */
+}
+
+.slider-image {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.488); /* Shadow effect */
+    height: 395px; /* Fixed height for equal size */
+    object-fit: cover; /* Maintain*/
+}
+    .icon-card {
+    background-color: #f8f9fa; /* Light background for the card */
+    border-radius: 40px; /* Rounded corners */
+    padding: 20px; /* Padding around the icon and text */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+    text-align: center; /* Center the text */
+}
+
+.icon-card:hover {
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.968); /* Shadow effect on hover */
+    
+}
+
+.icon-card i {
+    color: #00bfa5; /* Icon color */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+/* Card Styling */
+.card {
+   border-radius: 10px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(18, 14, 14, 0.718)
+}
+
+
+
+.gallery-card {
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Ensures the border radius is applied to the image */
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(18, 14, 14, 0.636);
+}
+
+/* Maps */
+.map-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Custom styles for medium and large screens */
+@media (min-width: 768px) {
+    .map-responsive {
+        padding-bottom: 80%;
+        /* Adjusted aspect ratio for medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .map-responsive {
+        padding-bottom: 60%;
+        /* Adjusted aspect ratio for large screens */
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for alignment */
+}
+
+.social-icon {
+    display: inline-flex; /* Inline flex for icon alignment */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    width: 40px; /* Set width for the button */
+    height: 40px; /* Set height for the button */
+    border-radius: 50%; /* Make it circular */
+    margin-left: 10px; /* Space between icons */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
